@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> </title>
+    <style>
+      body {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+      div {
+        background-color: teal;
+        width: 400px;
+        height: 400px;
+      }
+      @media screen and (orientation: landscape) {
+        div {
+          background-color: tomato;
+          block-size: 50px;
+        }
+        .garo {
+          display: none;
+        }
+      }
+      @media screen and (orientation: Portrait) {
+        .sero {
+          display: none;
+        }
+      }
+      span {
+        font-size: 36px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div></div>
+    <span class="garo">가로로 돌려주세요! 제발요~!</span>
+    <span class="sero">세로로 돌려주세요! 부탁해요~!</span>
+  </body>
+</html>
